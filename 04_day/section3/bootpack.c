@@ -1,6 +1,5 @@
 /* 告诉 C 编译器，函数在别的文件里 */
 void io_hlt(void);
-void write_mem8(int addr, int data);
 
 /* 是函数声明，却不用{}，而是直接 ; ，这表示函数是在别的文件中，你自己找一下把*/
 void HariMain(void)

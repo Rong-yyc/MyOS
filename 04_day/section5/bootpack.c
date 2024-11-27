@@ -9,7 +9,7 @@ void HariMain(void)
 
     for (i = 0; i <= 0xffff; i++)
     {
-        *(p + i) = i & 0x0f; /* MOV BYTE [p+i],i & 0x0f*/
+        p[i] = i & 0x0f; /* MOV BYTE [p+i],i & 0x0f*/
 
         /*以上就可以替代 write_mem8(i, i & 0x0f);*/
     }
